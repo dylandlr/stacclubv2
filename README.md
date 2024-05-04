@@ -4,7 +4,6 @@
 # Status
 ![CodeQL](https://github.com/dylandlr/stacclubv2/actions/workflows/codeql.yml/badge.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/04b8c96b-c35a-4030-86ae-10350e232282/deploy-status)](https://app.netlify.com/sites/stacclub/deploys)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dylandlr/stacclubv2/CI?label=build)
 ![Maintained](
 https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 [![Dependencies](https://img.shields.io/librariesio/release/npm/react)](https://libraries.io/npm/package-name)
@@ -25,7 +24,7 @@ https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 <!-- ![Supabase](https://img.shields.io/badge/Supabase-181818?style=for-the-badge&logo=supabase&logoColor=white) -->
 <!-- ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?&style=for-the-badge&logo=redis&logoColor=white
 ) -->
-
+<!-- ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dylandlr/stacclubv2/CI?label=build) -->
 stacclubv2 is the newest version of the STACC website.
 
 ## Installation
