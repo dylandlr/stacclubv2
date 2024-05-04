@@ -2,7 +2,7 @@
 # STACC.SITE DEV BRANCH
 
 # Status
-![CodeQL](https://github.com/dylandlr/stacclubv2/actions/workflows/codeql.yml/badge.svg)
+[![CodeQL](https://github.com/dylandlr/stacclubv2/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/dylandlr/stacclubv2/actions/workflows/github-code-scanning/codeql)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/04b8c96b-c35a-4030-86ae-10350e232282/deploy-status)](https://app.netlify.com/sites/stacclub/deploys)
 ![Maintained](
 https://img.shields.io/badge/Maintained%3F-yes-green.svg)
