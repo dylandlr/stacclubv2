@@ -1,0 +1,17 @@
+# ENVIROMENT FILES
+./.env
+.env
+# Local Netlify folder
+.netlify
+
+# Package Files
+node_modules/
+
+# Build files
+# might be good to ignore public build files since its not in the main root
+/public 
+# Secrets
+**/.env
+
+.json.env
+GC_API_KEY.env
