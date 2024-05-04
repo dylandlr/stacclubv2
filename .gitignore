@@ -12,3 +12,6 @@ node_modules/
 /public 
 # Secrets
 **/.env
+
+.json.env
+GC_API_KEY.env
