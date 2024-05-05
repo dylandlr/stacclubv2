@@ -7,11 +7,13 @@
     Description: Adding tailwindcss to the css reset stylesheet to make it more compatible with the rest of the site.
     This serves as the main stylesheet for the site combining reset css and tailwindcss.
 */
-@import "normalize.css";
+/* @import "normalize.css";
 
 @import "tailwindcss/base";
 @import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss/utilities"; */
+
+/* CSS NATIVE STYLES WITH CSS RESET TOOL */
 
 
 html, body, div, span, applet, object, iframe,

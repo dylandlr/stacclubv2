@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // import components
-import App from './components/App';
+import App from '../App.jsx';
 
 // render the app in the index.html file
 // this must be at the end of the file to render the app

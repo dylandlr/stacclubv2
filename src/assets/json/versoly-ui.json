@@ -1,0 +1,603 @@
+{
+    "name": "Versoly UI Default",
+    "version": "1.0.0",
+    "versoly-ui-version": "2.3.0",
+    "author": "Versoly",
+    "fonts": [
+      "Inter"
+    ],
+    "components": {
+      "body": "font-sans bg-white",
+      "html :where(a)": "text-primary hover:text-primary-800",
+      "html :where(a.text-{color})": "{text=link.text} {hover:text=link.hover:text} {active:text=link.active:text}",
+      "html :where(a.text-white)": "hover:text-gray-300",
+      "html :where(a.text-dark)": "hover:text-gray-600",
+      "h1, h2, h3, h4, h5, p": "mb-3",
+      "h1, .h1": "text-[calc(1.375rem+1.5vw)] xl:text-5xl",
+      "h2, .h2": "text-[calc(1.325rem+0.9vw)] xl:text-4xl",
+      "h3, .h3": "text-[calc(1.3rem+0.6vw)] xl:text-3xl",
+      "h4, .h4": "text-[calc(1.275rem+0.3vw)] xl:text-2xl",
+      "h5, .h5": "text-xl",
+      ".display-1": "text-[calc(1.625rem+4.5vw)] lg:text-[5rem] leading-[1.2] font-light",
+      ".display-2": "text-[calc(1.575rem+3.9vw)] lg:text-[4.5rem] leading-[1.2] font-light",
+      ".display-3": "text-[calc(1.525rem+3.3vw)] lg:text-[4rem] leading-[1.2] font-light",
+      ".display-4": "text-[calc(1.475rem+2.7vw)] lg:text-[3.5rem] leading-[1.2] font-light",
+      ".display-5": "text-[calc(1.425rem+2.1vw)] lg:text-[3rem] leading-[1.2] font-light",
+      ".display-6": "text-[calc(1.375rem+1.6vw)] lg:text-[2.5rem] leading-[1.2] font-light",
+      ".blockquote": "text-xl italic font-semibold text-neutral-900",
+      ".blockquote-{color}": "p-4 {bg=alert.bg} border-l-[4px]  {border=DEFAULT.DEFAULT}",
+      ".accordion-item": "flex flex-col bg-white rounded-lg p-4 mb-3",
+      ".accordion-header": "flex items-center text-left text-xl w-full cursor-pointer font-semibold text-dark hover:text-primary-700 transition-all duration-300 after:transition after:duration-300 after:flex-shrink-0 after:w-5 after:h-5 after:ml-auto after:content-[''] after:[mask:var(--svg-arrow-down)_no-repeat_50%_50%] after:[mask-size:cover] after:bg-current",
+      ".accordion-header[aria-expanded=\"true\"]": "text-primary hover:text-primary-700 after:rotate-180",
+      ".accordion-collapse": "transition-all duration-300",
+      ".accordion-body": "py-3",
+      ".alert": "flex flex-row rounded-md px-3 py-2 text-gray-700 bg-gray-100 transition-opacity duration-300",
+      ".alert-{color}": "{text=alert.text} {bg=alert.bg}",
+      ".badge": "inline-block px-2 py-0.5 rounded text-xs text-white font-semibold",
+      ".badge-lg": "px-3 py-1 rounded text-sm text-white font-semibold",
+      ".btn": "inline-flex flex-wrap items-center justify-center text-center cursor-pointer select-none transition duration-200 ease-in-out flex-shrink-0 font-semibold py-2 px-4 rounded-md disabled:opacity-80 disabled:pointer-events-none focus:outline-none focus:ring-2 focus:ring-opacity-50 hover:no-underline border-0",
+      ".btn-ani": "transform-all hover:-translate-y-0.5 duration-300 ease",
+      ".btn-{color}": "{bg=DEFAULT.DEFAULT} {hover:bg=DEFAULT.hover:bg} {hover:text=DEFAULT.hover:text} {active:bg=DEFAULT.active:bg} {text=DEFAULT.text} {border=DEFAULT.DEFAULT} {hover:border=DEFAULT.hover:bg} {ring=DEFAULT.DEFAULT} {focus:ring=DEFAULT.active:bg}",
+      ".btn-outline.btn-{color}": "bg-transparent {text=DEFAULT.DEFAULT} {hover:bg=DEFAULT.hover:bg} {active:bg=DEFAULT.active:bg} active:text-white hover:text-white {border=DEFAULT.DEFAULT} border {focus:ring=DEFAULT.active:bg}",
+      ".btn-subtle.btn-{color}": "bg-transparent {bg=subtle.bg} {hover:bg=subtle.hover:bg} {hover:text=subtle.hover:text} {active:bg=subtle.active:bg} {text=DEFAULT.DEFAULT} border-0 {focus:ring=DEFAULT.active:bg}",
+      ".btn-link.btn-{color}": "bg-transparent hover:bg-transparent active:bg-transparent border-transparent {text=link.text} {hover:text=link.hover:text} {active:text=link.active:text} border-0 hover:underline {focus:ring=DEFAULT.active:bg}",
+      ".btn-ghost.btn-{color}": "bg-transparent {hover:bg=ghost.hover:bg} {hover:text=ghost.hover:text} {active:bg=ghost.active:bg} {text=DEFAULT.DEFAULT} border-0 {focus:ring=DEFAULT.active:bg}",
+      ".btn-ghost.btn-light:not(.c)": "text-gray-900",
+      ".btn-xs, .btn-group-xs>.btn": "py-1 px-1 text-xs",
+      ".btn-sm, .btn-group-sm>.btn": "py-1 px-2 text-sm",
+      ".btn-lg, .btn-group-lg>.btn": "py-3 px-5 text-lg",
+      ".btn-xl, .btn-group-xl>.btn": "py-4 px-6 text-xl",
+      ".btn-group": "inline-flex",
+      ".btn-group .btn": "rounded-none first:rounded-l-md last:rounded-r-md",
+      ".btn-group > .btn-outline:not(:first-child)": "border-l-0 border-r-[1px]",
+      ".pagination > .btn": "px-3 py-1",
+      ".btn-outline.btn-{color}[aria-current=\"page\"]": "{bg=DEFAULT.DEFAULT} {text=DEFAULT.text}",
+      ".btn-ghost.btn-{color}[aria-current=\"page\"]": "{hover:text=ghost.hover:text} {bg=ghost.hover:bg} {text=DEFAULT.DEFAULT}",
+      ".modal": "fixed left-0 top-0 w-screen h-screen overflow-auto z-50 transition-opacity duration-500 opacity-0",
+      ".modal-bg": "fixed w-screen h-screen left-0 top-0 z-30 pt-16 bg-gray-900 overflow-auto transition-opacity duration-500 opacity-50",
+      ".modal-lg": "max-w-screen-md",
+      ".modal-sm": "max-w-sm",
+      ".modal-xl": "max-w-screen-xl",
+      ".disabled": "opacity-80 pointer-events-none",
+      ".form-checkbox": "rounded border-primary-300 text-primary-600 shadow-sm focus:border-primary-300 focus:ring focus:ring-offset-0 focus:ring-primary-200 focus:ring-opacity-50",
+      ".form-checkbox[type=\"checkbox\"]": "rounded",
+      ".form-radio[type=\"radio\"]": "text-primary-600 ring-offset-2 focus:ring-2 focus:ring-primary-300",
+      ".form-input": "block mt-0 w-full rounded-md border-gray-300 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50",
+      ".form-select": "block mt-1 w-full rounded-md border-gray-300 shadow-sm focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50",
+      ".form-input-sm": "px-2 py-1 text-sm",
+      ".form-input-lg": "px-4 py-2 text-lg",
+      ".form-select-sm": "pl-2 py-1 text-sm",
+      ".form-select-lg": "pl-4 py-2 text-lg",
+      ".navbar": "z-20 py-3 relative",
+      ".navbar > .container-fluid, .navbar > .container": "flex flex-wrap justify-between md:flex-nowrap px-3 md:px-5",
+      ".navbar-dark .navbar-btn": "focus:ring-white",
+      ".navbar-btn": "w-6 mr-5 cursor-pointer select-none rounded md:hidden",
+      ".navbar-brand": "flex flex-row items-center space-x-3 ml-5 md:ml-0 text-primary font-bold text-xl",
+      ".navbar-col": "flex flex-col items-center mt-3 space-y-4 md:flex-row md:space-x-4 md:space-y-0 md:mt-0",
+      ".navbar-row": "hidden w-screen items-center md:flex md:flex-grow md:justify-between md:w-auto md:ml-4 transition-all transform duration-300 opacity-0 h-0 md:h-auto md:opacity-100 !md:h-auto md:overflow-visible",
+      ".navbar-row.show": "opacity-100",
+      ".dropdown-menu": "absolute hidden transition duration-200 opacity-0 w-max py-2 bg-white border border-gray-300 rounded mt-2 min-w-[160px] z-[1]",
+      ".dropdown-item": "bg-transparent py-1.5 px-4 hover:text-primary-800 focus:text-primary-800 hover:bg-primary-100 focus:bg-primary-100 focus:outline-none focus:shadow-outline",
+      ".dropdown-menu.show": "opacity-100 block",
+      "[data-toggle=\"dropdown\"]": "flex ml-4 items-center gap-x-1 after:flex-shrink-0 after:w-4 after:h-4 after:[mask:var(--svg-caret-down)_no-repeat_50%_50%] after:[mask-size:cover] after:content-[''] after:bg-current",
+      "[data-popper-arrow]::before": "content-[''] rotate-[45deg] absolute h-4 w-4 bg-white border-l border-t border-gray-300 rounded-tl",
+      "[data-popper-placement^='top'] > [data-popper-arrow]": "-bottom-2",
+      "[data-popper-placement^='bottom'] > [data-popper-arrow]": "-top-2",
+      "[data-popper-placement^='left'] > [data-popper-arrow]": "-right-2",
+      "[data-popper-placement^='right'] > [data-popper-arrow]": "-left-2",
+      ".container": "override:w-full override:max-w-full override:lg:max-w-[calc(min(100vw-60px,1220px))] mx-auto px-5",
+      ".container-fluid": "override:w-full override:max-w-full mx-auto px-5",
+      ".row": "flex flex-wrap flex-row -mx-5",
+      ".col": "relative w-full px-5",
+      ".progress": "flex w-full overflow-hidden bg-gray-200 rounded-full h-2.5",
+      ".progress-bar": "h-full",
+      ".progress-sm": "h-1.5",
+      ".progress-lg": "h-4",
+      ".progress-xl": "h-6",
+      ".card": "relative flex flex-col overflow-hidden shadow-md rounded-md bg-white",
+      ".card-body": "p-5 flex-grow",
+      ".card-header": "px-5 py-3 bg-gray-100",
+      ".card-footer": "px-5 py-3 bg-gray-100",
+      ".tab-list": "flex flex-wrap gap-x-2 mb-2 select-none",
+      ".tab-content": "py-2",
+      ".tab-pane": "",
+      ".tab": "px-4 py-2 border-b-2 hover:text-primary ring-0 focus:outline-none",
+      ".tab[aria-selected=\"true\"]": "border-primary text-primary",
+      ".tab-list-underline": "border-b-2 border-gray-300",
+      ".tab-underline": "px-3 py-2 text-muted hover:text-primary focus:outline-none",
+      ".tab-underline[aria-selected=\"true\"]": "-mb-1 border-0 border-b-2 border-primary text-primary",
+      ".table": "min-w-full",
+      "html :where(.table>thead)": "bg-gray-50",
+      "html :where(.table>thead>tr>th)": "py-3 px-4 text-xs font-semibold text-left text-gray-700",
+      ".table>tbody>tr": "bg-white border-b",
+      "html :where(.table>tbody>tr>td)": "py-3 px-4 text-sm text-gray-900",
+      ".table-sm>thead>tr>th": "py-1",
+      ".table-sm>tbody>tr>td": "py-1",
+      ".table-striped>thead>tr": "bg-gray-50 border-b border-gray-300",
+      ".table-striped>tbody>tr": "even:bg-gray-100",
+      ".table-hover>tbody>tr": "hover:bg-gray-200",
+      ".prose > blockquote": "border-l-4 border-gray-600 my-3 py-3 pl-4 text-xl -ml-5",
+      ".prose a": "text-primary hover:text-primary-700",
+      ".prose ul ul": "list-disc",
+      ".prose ul ul ul": "list-[square]",
+      ".prose h4": "text-lg",
+      ".fa-ul": "ml-6",
+      ".tooltip": "hidden absolute invisible top-0 left-0 bg-dark text-white font-normal py-2 px-3 rounded-lg shadow-sm text-sm pointer-events-none opacity-0 transition-opacity duration-300",
+      ".tooltip-arrow": "absolute bg-dark w-2 h-2 rotate-45",
+      "html :where(.modal-content)": "relative m-auto mt-16 bg-gray-100 shadow-lg z-40 max-w-md",
+      "html :where(.taos-init)": "duration-[400ms]"
+    },
+    "colors": {
+      "primary": {
+        "DEFAULT": {
+          "DEFAULT": "blue-600",
+          "hover:bg": "blue-700",
+          "active:bg": "blue-800",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "blue-100",
+          "active:bg": "blue-200",
+          "hover:text": "blue-700"
+        },
+        "subtle": {
+          "bg": "blue-100",
+          "hover:bg": "blue-200",
+          "active:bg": "blue-300",
+          "hover:text": "blue-700"
+        },
+        "link": {
+          "text": "blue-600",
+          "hover:text": "blue-800",
+          "active:text": "blue-900"
+        },
+        "alert": {
+          "bg": "blue-50",
+          "text": "blue-600"
+        }
+      },
+      "secondary": {
+        "DEFAULT": {
+          "DEFAULT": "pink-600",
+          "hover:bg": "pink-700",
+          "active:bg": "pink-800",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "pink-100",
+          "active:bg": "pink-200",
+          "hover:text": "pink-700"
+        },
+        "subtle": {
+          "bg": "pink-100",
+          "hover:bg": "pink-200",
+          "active:bg": "pink-300",
+          "hover:text": "pink-700"
+        },
+        "link": {
+          "text": "pink-600",
+          "hover:text": "pink-800",
+          "active:text": "pink-900"
+        },
+        "alert": {
+          "bg": "pink-50",
+          "text": "pink-600"
+        }
+      },
+      "tertiary": {
+        "DEFAULT": {
+          "DEFAULT": "violet-600",
+          "hover:bg": "violet-700",
+          "active:bg": "violet-800",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "violet-100",
+          "active:bg": "violet-200",
+          "hover:text": "violet-700"
+        },
+        "subtle": {
+          "bg": "violet-100",
+          "hover:bg": "violet-200",
+          "active:bg": "violet-300",
+          "hover:text": "violet-700"
+        },
+        "link": {
+          "text": "violet-600",
+          "hover:text": "violet-800",
+          "active:text": "violet-900"
+        },
+        "alert": {
+          "bg": "violet-50",
+          "text": "violet-600"
+        }
+      },
+      "neutral": {
+        "DEFAULT": {
+          "DEFAULT": "slate-600",
+          "hover:bg": "slate-700",
+          "active:bg": "slate-800",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "slate-100",
+          "active:bg": "slate-200",
+          "hover:text": "slate-700"
+        },
+        "subtle": {
+          "bg": "slate-100",
+          "hover:bg": "slate-200",
+          "active:bg": "slate-300",
+          "hover:text": "slate-700"
+        },
+        "link": {
+          "text": "slate-600",
+          "hover:text": "slate-800",
+          "active:text": "slate-900"
+        },
+        "alert": {
+          "bg": "slate-50",
+          "text": "slate-600"
+        }
+      },
+      "success": {
+        "DEFAULT": {
+          "DEFAULT": "emerald-500",
+          "hover:bg": "emerald-600",
+          "active:bg": "emerald-700",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "emerald-100",
+          "active:bg": "emerald-200",
+          "hover:text": "emerald-600"
+        },
+        "subtle": {
+          "bg": "emerald-100",
+          "hover:bg": "emerald-200",
+          "active:bg": "emerald-300",
+          "hover:text": "emerald-600"
+        },
+        "link": {
+          "text": "emerald-500",
+          "hover:text": "emerald-700",
+          "active:text": "emerald-800"
+        },
+        "alert": {
+          "bg": "emerald-50",
+          "text": "emerald-600"
+        }
+      },
+      "info": {
+        "DEFAULT": {
+          "DEFAULT": "blue-400",
+          "hover:bg": "blue-500",
+          "active:bg": "blue-600",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "blue-100",
+          "active:bg": "blue-200",
+          "hover:text": "blue-500"
+        },
+        "subtle": {
+          "bg": "blue-100",
+          "hover:bg": "blue-200",
+          "active:bg": "blue-300",
+          "hover:text": "blue-500"
+        },
+        "link": {
+          "text": "blue-400",
+          "hover:text": "blue-600",
+          "active:text": "blue-700"
+        },
+        "alert": {
+          "bg": "blue-50",
+          "text": "blue-600"
+        }
+      },
+      "warning": {
+        "DEFAULT": {
+          "DEFAULT": "amber-500",
+          "hover:bg": "amber-600",
+          "active:bg": "amber-700",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "amber-100",
+          "active:bg": "amber-200",
+          "hover:text": "amber-600"
+        },
+        "subtle": {
+          "bg": "amber-100",
+          "hover:bg": "amber-200",
+          "active:bg": "amber-300",
+          "hover:text": "amber-600"
+        },
+        "link": {
+          "text": "amber-500",
+          "hover:text": "amber-700",
+          "active:text": "amber-800"
+        },
+        "alert": {
+          "bg": "amber-50",
+          "text": "amber-600"
+        }
+      },
+      "danger": {
+        "DEFAULT": {
+          "DEFAULT": "red-600",
+          "hover:bg": "red-700",
+          "active:bg": "red-800",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "hover:bg": "red-100",
+          "active:bg": "red-200",
+          "hover:text": "red-700"
+        },
+        "subtle": {
+          "bg": "red-100",
+          "hover:bg": "red-200",
+          "active:bg": "red-300",
+          "hover:text": "red-700"
+        },
+        "link": {
+          "text": "red-600",
+          "hover:text": "red-800",
+          "active:text": "red-900"
+        },
+        "alert": {
+          "bg": "red-50",
+          "text": "red-600"
+        }
+      },
+      "light": {
+        "DEFAULT": {
+          "DEFAULT": "gray-100",
+          "hover:bg": "gray-200",
+          "active:bg": "gray-300",
+          "text": "black",
+          "hover:text": "black"
+        },
+        "ghost": {
+          "hover:bg": "gray-100",
+          "active:bg": "gray-200",
+          "hover:text": "gray-200"
+        },
+        "subtle": {
+          "bg": "gray-100",
+          "hover:bg": "gray-200",
+          "active:bg": "gray-300",
+          "hover:text": "gray-200"
+        },
+        "link": {
+          "text": "gray-100",
+          "hover:text": "gray-300",
+          "active:text": "gray-400"
+        },
+        "alert": {
+          "bg": "gray-50",
+          "text": "gray-600"
+        }
+      },
+      "dark": {
+        "DEFAULT": {
+          "DEFAULT": "gray-800",
+          "hover:bg": "gray-900",
+          "active:bg": "gray-800",
+          "text": "white",
+          "hover:text": "white"
+        },
+        "ghost": {
+          "DEFAULT": "pink-100",
+          "hover:bg": "pink-200",
+          "hover:text": "gray-800"
+        },
+        "link": {
+          "text": "gray-800",
+          "hover:text": "gray-900",
+          "active:text": "gray-1000"
+        },
+        "subtle": {
+          "bg": "gray-100",
+          "hover:bg": "gray-200",
+          "active:bg": "gray-300",
+          "hover:text": "gray-900"
+        }
+      },
+      "white": {
+        "DEFAULT": {
+          "DEFAULT": "white",
+          "text": "black"
+        }
+      },
+      "black": {
+        "DEFAULT": {
+          "DEFAULT": "black",
+          "text": "white"
+        }
+      },
+      "muted": {
+        "DEFAULT": {
+          "DEFAULT": "gray-700"
+        }
+      }
+    },
+    "variables": {
+      "--svg-caret-down": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='currentFill' d='M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z'/%3E%3C/svg%3E\")",
+      "--svg-arrow-down": "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e\")"
+    },
+    "theme": {
+      "extend": {
+        "fontFamily": {
+          "sans": "Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\""
+        },
+        "spacing": {
+          "112": "28rem",
+          "128": "32rem",
+          "144": "36rem",
+          "160": "40rem",
+          "192": "48rem"
+        },
+        "colors": {
+          "primary": {
+            "50": "#eff6ff",
+            "100": "#dbeafe",
+            "200": "#bfdbfe",
+            "300": "#93c5fd",
+            "400": "#60a5fa",
+            "500": "#3b82f6",
+            "600": "#2563eb",
+            "700": "#1d4ed8",
+            "800": "#1e40af",
+            "900": "#1e3a8a",
+            "950": "#172554",
+            "DEFAULT": "#2563eb"
+          },
+          "secondary": {
+            "50": "#fdf2f8",
+            "100": "#fce7f3",
+            "200": "#fbcfe8",
+            "300": "#f9a8d4",
+            "400": "#f472b6",
+            "500": "#ec4899",
+            "600": "#db2777",
+            "700": "#be185d",
+            "800": "#9d174d",
+            "900": "#831843",
+            "950": "#500724",
+            "DEFAULT": "#db2777"
+          },
+          "tertiary": {
+            "50": "#f5f3ff",
+            "100": "#ede9fe",
+            "200": "#ddd6fe",
+            "300": "#c4b5fd",
+            "400": "#a78bfa",
+            "500": "#8b5cf6",
+            "600": "#7c3aed",
+            "700": "#6d28d9",
+            "800": "#5b21b6",
+            "900": "#4c1d95",
+            "950": "#2e1065",
+            "DEFAULT": "#7c3aed"
+          },
+          "neutral": {
+            "50": "#f8fafc",
+            "100": "#f1f5f9",
+            "200": "#e2e8f0",
+            "300": "#cbd5e1",
+            "400": "#94a3b8",
+            "500": "#64748b",
+            "600": "#475569",
+            "700": "#334155",
+            "800": "#1e293b",
+            "900": "#0f172a",
+            "950": "#020617",
+            "DEFAULT": "#475569"
+          },
+          "success": {
+            "50": "#ecfdf5",
+            "100": "#d1fae5",
+            "200": "#a7f3d0",
+            "300": "#6ee7b7",
+            "400": "#34d399",
+            "500": "#10b981",
+            "600": "#059669",
+            "700": "#047857",
+            "800": "#065f46",
+            "900": "#064e3b",
+            "950": "#022c22",
+            "DEFAULT": "#10b981"
+          },
+          "info": {
+            "50": "#eff6ff",
+            "100": "#dbeafe",
+            "200": "#bfdbfe",
+            "300": "#93c5fd",
+            "400": "#60a5fa",
+            "500": "#3b82f6",
+            "600": "#2563eb",
+            "700": "#1d4ed8",
+            "800": "#1e40af",
+            "900": "#1e3a8a",
+            "950": "#172554",
+            "DEFAULT": "#60a5fa"
+          },
+          "warning": {
+            "50": "#fffbeb",
+            "100": "#fef3c7",
+            "200": "#fde68a",
+            "300": "#fcd34d",
+            "400": "#fbbf24",
+            "500": "#f59e0b",
+            "600": "#d97706",
+            "700": "#b45309",
+            "800": "#92400e",
+            "900": "#78350f",
+            "950": "#451a03",
+            "DEFAULT": "#f59e0b"
+          },
+          "danger": {
+            "50": "#fef2f2",
+            "100": "#fee2e2",
+            "200": "#fecaca",
+            "300": "#fca5a5",
+            "400": "#f87171",
+            "500": "#ef4444",
+            "600": "#dc2626",
+            "700": "#b91c1c",
+            "800": "#991b1b",
+            "900": "#7f1d1d",
+            "950": "#450a0a",
+            "DEFAULT": "#dc2626"
+          },
+          "light": {
+            "50": "#f9fafb",
+            "100": "#f3f4f6",
+            "200": "#e5e7eb",
+            "300": "#d1d5db",
+            "400": "#9ca3af",
+            "500": "#6b7280",
+            "600": "#4b5563",
+            "700": "#374151",
+            "800": "#1f2937",
+            "900": "#111827",
+            "950": "#030712",
+            "DEFAULT": "#f3f4f6"
+          },
+          "dark": {
+            "50": "#f9fafb",
+            "100": "#f3f4f6",
+            "200": "#e5e7eb",
+            "300": "#d1d5db",
+            "400": "#9ca3af",
+            "500": "#6b7280",
+            "600": "#4b5563",
+            "700": "#374151",
+            "800": "#1f2937",
+            "900": "#111827",
+            "950": "#030712",
+            "DEFAULT": "#1f2937"
+          },
+          "white": "#fff",
+          "black": "#000",
+          "muted": "#374151"
+        },
+        "backgroundImage": {
+          "arrow-down": "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e\")",
+          "caret-down": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='currentFill' d='M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z'/%3E%3C/svg%3E\");"
+        }
+      }
+    },
+    "updatedAt": 1714853088346
+  }

@@ -1,17 +1,26 @@
-# ENVIROMENT FILES
-./.env
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 .env
-# Local Netlify folder
-.netlify
-
-# Package Files
-node_modules/
-
-# Build files
-# might be good to ignore public build files since its not in the main root
-/public 
-# Secrets
-**/.env
-
-.json.env
-GC_API_KEY.env
+# .vscode might need to be added to the .gitignore file to prevent people from committing their workspace settings

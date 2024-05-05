@@ -1,100 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta property="og:title" content="STACC"/>
-    <meta property="og:url" content="http://stacc.site/index.html"/>
-    <meta property="og:description" content="Science Technology And Computing Club @ Texas A&amp;M Rellis"/>
-    <meta property="og:image" content="./assets/imgs/stacc_logo.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta property="og:title" content="STACC" />
+    <meta property="og:url" content="http://stacc.site/index.html" />
+    <meta
+      property="og:description"
+      content="Science Technology And Computing Club @ Texas A&amp;M Rellis"
+    />
+    <meta property="og:image" content="./src/assets/imgs/stacc_logo.png" />
     <title>STACC</title>
+    <!-- main css -->
+    <link href="./src/assets/css/main.css" rel="stylesheet" />
     <!-- logo -->
-    <link rel="icon" type="image/png" href="./assets/imgs/stacc_logo.png">
+    <link rel="icon" type="image/png" href="./src/assets/imgs/stacc_logo.png" />
     <!-- style.css -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/assets/css/styles.css" />
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-    <!-- Google Fonts --> 
-    <!-- find the fonts used by the stacc v1 site and add them here -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet"> <!-- Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet"> <!-- Montserrat -->  
-</head>
-<body>
-    <!-- Navigation  https://getbootstrap.com/docs/4.0/components/navbar/ -->
-    <nav class="navbar navbar-expand-xl fixed-top">
-      <div>
-        <a class="navbar-brand my-auto" href="./index.html">
-          <img class="img-fluid" src="./assets/imgs/stacc_logo.png" alt=""> 
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter"
+      rel="stylesheet"
+    />
+    <!-- Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM Plex Sans"
+      rel="stylesheet"
+    />
+    <!-- IBM Plex Sans -->
+  </head>
+  <body>
+    <nav class="navbar sticky top-0 bg-light dark:bg-dark" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            width="30"
+            height="45"
+            alt="company logo"
+            src="https://d1pnnwteuly8z3.cloudfront.net/images/0f7fc8ee-e8d7-453e-8b15-79efcfbbf026/75d566d1-e549-4f97-aa1c-326d7d1168a9.png"
+          />
+          <span class="dark:text-light text-dark">STACC</span>
         </a>
-          <div class="navbar-brand-title d-inline align-middle">STAC.CLUB</div>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa fa-bars" style="color:#fff"></i></button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link nav-link-fade-up nav-link-fade-up-active px-0" href="./index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-fade-up px-0" href="./about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-fade-up px-0" href="./calendar.html">Calendar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-fade-up px-0" href="./events.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-fade-up px-0" href="./partners.html">Partners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-fade-up px-0" href="./contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-fade-up px-0" href="./login.html">Log In</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-btn"
+          data-toggle="collapse"
+          data-target="#navbar-row"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="sr-only">Open navbar menu</span>
+          <span class="block h-1 rounded-full bg-primary"></span>
+          <span class="block h-1 mt-1 rounded-full bg-primary"></span>
+          <span class="block h-1 mt-1 rounded-full bg-primary"></span>
+        </button>
+        <div class="navbar-row" id="navbar-row">
+          <ul class="navbar-col"></ul>
+          <ul class="navbar-col">
+            <li>
+              <a
+                class="nav-link font-semibold text-primary dark:text-secondary"
+                href="./about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./events.html"
+                class="nav-link font-semibold dark:text-secondary"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                href="./support.html"
+                class="nav-link font-semibold dark:text-secondary"
+                >Support Us</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-col">
+            <li>
+              <div class="flex justify-center items-center">
+                <button
+                  id="toggleThemeButton"
+                  class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-dark-950"
+                >
+                  <svg
+                    class="block fill-primary dark:hidden"
+                    fill="currentColor dark:text-secondary"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="fill-secondary hidden dark:block"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li>
+              <a
+                class="nav-link font-semibold dark:text-secondary"
+                href="./login.html"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a class="nav-link btn btn-primary" href="#">Get Started ➔</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-</body>
-<!-- Bootstrap JS -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Google API -->
-<script src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
-<script src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
-<!-- Custom JS -->
-<script src="./assets/js/main.js"></script>
-<!-- Popper.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
-        integrity="sha384-Q6E4A2C6LbN49ACOpyknY+4vw4JVnKa3H5F5kYtFtQJYF6JnA7klau3lJ0n2xm5L"
-        crossorigin="anonymous"></script>
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script> <!-- this allows us to perform AJAX requests -->
-<!-- React JS -->
-<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script> 
-<!-- React JS allows us to use React components -->
-<!-- React DOM -->
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-<!-- React DOM allows us to render our components to the DOM -->
-<!-- Babel -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-<!-- Babel allows us to write JSX code in our React components -->
-<!-- Floating UI -->
-<script src="https://unpkg.com/react-floating-ui@1.0.0/umd/react-floating-ui.production.min.js"></script> 
-<!-- Floating UI is a library that allows us to create floating UI elements -->
-<!-- CSS TOOLS: Reset CSS -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/reset-css@5.1.2/reset.css"> -->
-<!-- Webpack -->
-<!-- this is a module bundler that allows us to bundle our code into a single file -->
-<!-- <script src="https://unpkg.com/webpack@5.24.2/umd/webpack.min.js"></script> -->
-<!-- Normalize CSS -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css"> -->
-<!-- normalize.css is a CSS file that makes browsers render all elements more consistently -->
-<!-- Sanitize CSS -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/sanitize.css@10.0.0/sanitize.css"> -->
-<!-- sanitize.css is a CSS file that makes browsers render all elements more consistently -->
+
+    <!-- Main Content -->
+    <section class="py-28 bg-light" id="header">
+      <div class="container">
+        <div class="row justify-center">
+          <div class="col lg:w-9/12 text-center md:w-10/12">
+            <img
+              src="https://stacclub.netlify.app/images/green_on_darkergrey.png"
+              id=""
+              class="inline-block"
+            />
+            <p class="h5 mb-10 font-light text-dark">
+              The Science Technology and Computing Club (STACC) will
+              indiscriminately provide a resource for student members within the
+              TAMU System RELLIS Campus to develop social interaction
+              confidence, basic through advanced computer knowledge and
+              information technology expertise.
+            </p>
+            <div
+              class="flex flex-col md:flex-row justify-center gap-x-2 gap-y-3 mb-3"
+            >
+              <a class="btn btn-primary btn-ani btn-lg" href="#"
+                >Support us ➔</a
+              >
+              <button
+                class="btn btn-primary btn-ani btn-subtle btn-lg inline-flex"
+                href="/Support.html"
+                data-toggle="modal"
+                data-options="{'iframeSrc':'','size':'xl'}"
+              >
+                Join the Member List
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-center">
+          <div class="col lg:w-9/12 text-center md:w-10/12">
+            <!-- this div creates a large width with a margin on the left and right  of 1/12 of the screen width and centers the text in addition to 10/12 of the screen width for medium screens -->
+            <!-- create a vertical margin of 10px and a horizontal margin of 20px -->
+            <center>
+              <div class="px-20 py-10">
+                <iframe
+                  src="https://calendar.google.com/calendar/embed?src=stacc.rellis%40gmail.com&ctz=America%2FChicago"
+                  style="border: 0"
+                  width="800"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                ></iframe
+                >'
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-6 bg-dark" id="footer">
+      <div class="container">
+        <div class="row justify-between">
+          <div class="col md:w-9/12">
+            <p class="text-light bg-dark">
+              © 2024 • Science Technology And Computing Club - TAMUC at RELLIS
+            </p>
+          </div>
+          <div class="col md:w-3/12 flex md:justify-end">
+            <a
+              class="text-dark"
+              href="https://discord.com/invite/uzxc543peQ"
+              title="twitter"
+            >
+              <i class="fab fa-discord pr-2 text-3xl text-light"></i>
+            </a>
+            <a
+              class="text-dark"
+              href="https://www.instagram.com/staccxrellis/"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram pr-2 text-3xl text-light"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- COMPILED JS -->
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- Google Calendar API -->
+    <script
+      src="https://apis.google.com/js/api.js"
+      onload="gapiLoaded()"
+    ></script>
+    <script
+      src="https://accounts.google.com/gsi/client"
+      onload="gisLoaded()"
+    ></script>
+    <!-- Popper.js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+      integrity="sha384-Q6E4A2C6LbN49ACOpyknY+4vw4JVnKa3H5F5kYtFtQJYF6JnA7klau3lJ0n2xm5L"
+      crossorigin="anonymous"
+    ></script>
+    <!-- React JS -->
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <!-- React JS allows us to use React components -->
+    <!-- React DOM -->
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <!-- React DOM allows us to render our components to the DOM -->
+    <!-- Babel 
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>-->
+    <!-- Babel allows us to write JSX code in our React components -->
+    <!-- Floating UI -->
+    <!-- <script src="https://unpkg.com/react-floating-ui@1.0.0/umd/react-floating-ui.production.min.js"></script> -->
+    <!-- Floating UI is a library that allows us to create floating UI elements -->
+    <!-- we can remove this if we already npm installed the package? -->
+    <!-- adding script for dark mode -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("toggleThemeButton");
+        toggleButton.addEventListener("click", () => {
+          document.body.classList.toggle("dark");
+        });
+      });
+    </script>
+  </body>
 </html>
